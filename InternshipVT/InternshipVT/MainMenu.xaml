@@ -1,0 +1,18 @@
+﻿<Window x:Class="InternshipVT.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InternshipVT"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="450" Width="800">
+    <Grid Background="#FF2787C8">
+        <Button x:Name="RegisterNewUserButton" Content="Register new user" HorizontalAlignment="Left" Margin="21,122,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="147" Click="RegisterNewUserButton_Click"/>
+        <Label x:Name="CurrentUser" Content="-" HorizontalAlignment="Left" Margin="21,13,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="ToChangePassword" Content="Change password" HorizontalAlignment="Left" Margin="21,47,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="ToChangePassword_Click"/>
+        <Button x:Name="LogoutButton" Content="Log out" HorizontalAlignment="Left" Margin="142,47,0,0" VerticalAlignment="Top" FontWeight="Bold" Click="LogoutButton_Click"/>
+        <Button x:Name="ToContacts" Content="Manage contacts" HorizontalAlignment="Left" Margin="21,182,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="147" Click="ToContacts_Click"/>
+        <Button x:Name="ToInternships" Content="Internships" HorizontalAlignment="Left" Margin="576,122,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="147" Click="ToInternships_Click"/>
+
+    </Grid>
+</Window>

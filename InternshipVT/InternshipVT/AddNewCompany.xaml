@@ -1,0 +1,34 @@
+﻿<Window x:Class="InternshipVT.AddNewCompany"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InternshipVT"
+        mc:Ignorable="d"
+        Title="AddNewCompany" Height="450" Width="800">
+    <Grid Background="#FF2787C8">
+        <Button x:Name="HomeButton" Content="Back" HorizontalAlignment="Left" Margin="653,339,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Width="96" Click="HomeButton_Click"/>
+        <TextBox x:Name="TitleField" HorizontalAlignment="Left" Margin="64,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontSize="14"/>
+        <TextBox x:Name="CompanyContactField" HorizontalAlignment="Left" Margin="64,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontSize="14"/>
+        <Label Content="Add new company/contact" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="NameField" HorizontalAlignment="Left" Margin="489,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <TextBox x:Name="PersonContactField" HorizontalAlignment="Left" Margin="489,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="14"/>
+        <CheckBox x:Name="MainContact" Content="Main contact" HorizontalAlignment="Left" Margin="494,243,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Internship" Content="Internship" HorizontalAlignment="Left" Margin="494,262,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Activities" Content="Activities" HorizontalAlignment="Left" Margin="494,282,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CD" Content="Career days" HorizontalAlignment="Left" Margin="494,302,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Trainings" Content="Trainings" HorizontalAlignment="Left" Margin="494,322,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="FS" Content="Financial support" HorizontalAlignment="Left" Margin="494,342,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="AddNewCompanyButton" Content="Add" HorizontalAlignment="Left" Margin="83,217,0,0" VerticalAlignment="Top" FontSize="14" Width="73" Click="AddNewCompanyButton_Click"/>
+        <ComboBox x:Name="SelectCompany" HorizontalAlignment="Left" Margin="489,201,0,0" VerticalAlignment="Top" Width="120" Text="" SelectionChanged="SelectCompany_SelectionChanged"/>
+        <Button x:Name="AddNewContactButton" Content="Add" HorizontalAlignment="Left" Margin="513,377,0,0" VerticalAlignment="Top" FontSize="14" Width="73" Click="AddNewContactButton_Click"/>
+        <Label Content="Title:" HorizontalAlignment="Left" Margin="64,79,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Contact:" HorizontalAlignment="Left" Margin="64,127,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Full name:" HorizontalAlignment="Left" Margin="489,79,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Contacts:" HorizontalAlignment="Left" Margin="489,129,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Company:" HorizontalAlignment="Left" Margin="489,177,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Company" HorizontalAlignment="Left" Margin="132,52,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Person" HorizontalAlignment="Left" Margin="508,28,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

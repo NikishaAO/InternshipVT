@@ -1,0 +1,14 @@
+﻿<Window x:Class="InternshipVT.Internships"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InternshipVT"
+        mc:Ignorable="d"
+        Title="Internships" Height="450" Width="800">
+    <Grid Background="#FF2787C8">
+        <Button x:Name="HomeButton" Content="To main menu" HorizontalAlignment="Left" Margin="653,339,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Width="96" Click="HomeButton_Click"/>
+        <DataGrid x:Name="Internshiptable" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="24,38,400,179"/>
+
+    </Grid>
+</Window>

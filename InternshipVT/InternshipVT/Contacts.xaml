@@ -1,0 +1,31 @@
+﻿<Window x:Class="InternshipVT.Contacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InternshipVT"
+        mc:Ignorable="d"
+        Title="Contacts" Height="450" Width="800">
+    <Grid Background="#FF2787C8">
+        <DataGrid x:Name="CompanyContacts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="35,32,417,217"/>
+        <ComboBox x:Name="SelectCompany" HorizontalAlignment="Left" Margin="35,266,0,0" VerticalAlignment="Top" Width="214" SelectedIndex="0" SelectionChanged="SelectCompany_SelectionChanged"/>
+        <ComboBox x:Name="RoleBox" HorizontalAlignment="Left" Margin="35,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Main contact" FontSize="14"/>
+            <ComboBoxItem Content="Internships" FontSize="14"/>
+            <ComboBoxItem Content="Activities" FontSize="14"/>
+            <ComboBoxItem Content="Career days" FontSize="14"/>
+            <ComboBoxItem Content="Trainings" FontSize="14"/>
+            <ComboBoxItem Content="Financial support"/>
+        </ComboBox>
+        <Button x:Name="HomeButton" Content="To main menu" HorizontalAlignment="Left" Margin="653,339,0,0" VerticalAlignment="Top" FontSize="14" Height="30" Width="96" Click="HomeButton_Click"/>
+        <Button x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="168,314,0,0" VerticalAlignment="Top" FontSize="14" Click="RefreshButton_Click" RenderTransformOrigin="0.772,0.32"/>
+        <DataGrid x:Name="StudentContacts" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="445,32,33,217"/>
+        <ComboBox x:Name="SelectStudyProgram" HorizontalAlignment="Left" Margin="592,270,0,0" VerticalAlignment="Top" Width="175" FontSize="14" SelectionChanged="SelectStudyProgram_SelectionChanged" SelectedIndex="0"/>
+        <Label Content="Company:" HorizontalAlignment="Left" Margin="35,232,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Role:" HorizontalAlignment="Left" Margin="35,286,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Study program:" HorizontalAlignment="Left" Margin="592,232,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="ToAddNewContact" Content="Add new contact" HorizontalAlignment="Left" Margin="35,369,0,0" VerticalAlignment="Top" FontSize="14" Height="25" Click="ToAddNewContact_Click"/>
+        <Button x:Name="ToAddNewStudent" Content="Add new contact" HorizontalAlignment="Left" Margin="463,270,0,0" VerticalAlignment="Top" FontSize="14" Height="25" Click="ToAddNewStudent_Click"/>
+
+    </Grid>
+</Window>
